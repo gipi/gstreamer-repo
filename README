@@ -6,6 +6,6 @@
  $ ln -sf master/gstreamer/scripts/gst-uninstalled gst-master
  $ ./gst-master
  $ cd master/
- $ for p in gstreamer plugins_good plugins_base plugins_bad qt; do\
+ $ for p in gstreamer plugins_base plugins_good plugins_bad qt; do \
     cd "$p" && ./autogen.sh && make && cd -; \
     done
