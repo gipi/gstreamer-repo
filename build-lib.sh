@@ -9,3 +9,18 @@ clean_all() {
         cd -
     done
 }
+
+build_all() {
+    for p in ${PROJECTS}
+    do
+        cd "$p"
+        build_project
+        cd -
+    done
+}
+
+build_project() {
+    ./autogen.sh --prefix=$PWD/../prefix/
+    make
+    make install
+}
