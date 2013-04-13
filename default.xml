@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote
+        name="anongit"
+        fetch="git://anongit.freedesktop.org/gstreamer/"
+    />
+    <default
+        revision="master"
+        remote="anongit"
+    />
+    <project path="gstreamer"/>
+    <project path="gst-plugins-base"/>
+    <project path="gst-plugins-good"/>
+    <project path="gst-plugins-bad"/>
+    <project path="qt-gstreamer"/>
+</manifest>
