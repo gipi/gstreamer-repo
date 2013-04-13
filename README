@@ -1,4 +1,5 @@
 
+ $ mkdir gst && cd gst
  $ repo init -u https://github.com/gipi/gstreamer-repo
  $ repo sync
  $ vim master/gstreamer/scripts/gst-uninstalled
