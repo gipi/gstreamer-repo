@@ -22,5 +22,4 @@ build_all() {
 build_project() {
     ./autogen.sh --prefix=$PWD/../prefix/
     make
-    make install
 }
