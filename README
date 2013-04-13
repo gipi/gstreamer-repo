@@ -1,0 +1,11 @@
+
+ $ repo init -u https://github.com/gipi/gstreamer-repo
+ $ repo sync
+ $ vim master/gstreamer/scripts/gst-uninstalled
+ # change line HOME=
+ $ ln -sf master/gstreamer/scripts/gst-uninstalled gst-master
+ $ ./gst-master
+ $ cd master/
+ $ for p in gstreamer plugins_good plugins_base plugins_bad qt; do\
+    cd "$p" && ./autogen.sh && make && cd -; \
+    done
