@@ -1,5 +1,5 @@
 
-PROJECTS="gstreamer plugins_base plugins_good plugins_bad"
+PROJECTS="gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad"
 
 clean_all() {
     for p in ${PROJECTS}
