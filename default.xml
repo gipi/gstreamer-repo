@@ -9,8 +9,8 @@
         remote="anongit"
     />
     <project path="master/gstreamer" name="gstreamer"/>
-    <project path="master/plugins_base" name="gst-plugins-base"/>
-    <project path="master/plugins_good" name="gst-plugins-good"/>
-    <project path="master/plugins_bad" name="gst-plugins-bad"/>
-    <project path="master/qt" name="qt-gstreamer"/>
+    <project path="master/gst-plugins-base" name="gst-plugins-base"/>
+    <project path="master/gst-plugins-good" name="gst-plugins-good"/>
+    <project path="master/gst-plugins-bad" name="gst-plugins-bad"/>
+    <project path="master/qt-gstreamer" name="qt-gstreamer"/>
 </manifest>
