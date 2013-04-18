@@ -5,7 +5,7 @@
  # change line HOME=
  $ ln -sf master/gstreamer/scripts/gst-uninstalled gst-master
  $ ./gst-master
- $ for p in gst-plugins-base gst-plugins-good gst-plugins-bad; do \
+ $ for p in gstreamer gst-plugins-base gst-plugins-good gst-plugins-bad; do \
     cd "$p" && ./autogen.sh --prefix=$PWD/../prefix/ && make && make install && cd -; \
     done
 
