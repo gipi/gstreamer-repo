@@ -5,12 +5,13 @@
         fetch="git://anongit.freedesktop.org/gstreamer/"
     />
     <default
-        revision="master"
+        revision="1.0.6"
         remote="anongit"
     />
-    <project path="master/gstreamer" name="gstreamer"/>
-    <project path="master/gst-plugins-base" name="gst-plugins-base"/>
-    <project path="master/gst-plugins-good" name="gst-plugins-good"/>
-    <project path="master/gst-plugins-bad" name="gst-plugins-bad"/>
-    <project path="master/qt-gstreamer" name="qt-gstreamer"/>
+    <project path="build/gstreamer" name="gstreamer"/>
+    <project path="1.0.6/gstreamer" name="gstreamer"/>
+    <project path="1.0.6/gst-plugins-base" name="gst-plugins-base"/>
+    <project path="1.0.6/gst-plugins-good" name="gst-plugins-good"/>
+    <project path="1.0.6/gst-plugins-bad" name="gst-plugins-bad"/>
+    <project path="1.0.6/qt-gstreamer" name="qt-gstreamer"/>
 </manifest>
