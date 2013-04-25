@@ -1,11 +1,14 @@
+This is a repository for a manifest useful to build from the latest
+source of gstreamer. Follow the steps outlined below
 
  $ mkdir gst && cd gst
- $ repo init -u https://github.com/gipi/gstreamer-repo
+ $ repo init -u https://github.com/gipi/gstreamer-repo -b 1.0
  $ repo sync
- $ vim master/gstreamer/scripts/gst-uninstalled
+ $ vim 1.0/gstreamer/scripts/gst-uninstalled
  # change line HOME=
- $ ln -sf master/gstreamer/scripts/gst-uninstalled gst-master
- $ ./gst-master
- $ for p in gstreamer plugins_base plugins_good plugins_bad qt; do \
-    cd "$p" && ./autogen.sh --prefix=$PWD/../prefix/ && make && make install && cd -; \
-    done
+ $ ln -sf 1.0/gstreamer/scripts/gst-uninstalled gst-1.0
+ $ ./gst-1.0
+ $ source ../build/build-lib.sh
+ $ build_all
+
+Obviously you need repo to be installed.
