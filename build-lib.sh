@@ -14,12 +14,14 @@ build_all() {
     for p in ${PROJECTS}
     do
         cd "$p"
-        build_project
+        build_project || {
+             echo '######## fatal ########'
+             break
+        }
         cd -
     done
 }
 
 build_project() {
-    ./autogen.sh --prefix=$PWD/../prefix/
-    make
+    ./autogen.sh --prefix=$PWD/../prefix/ && make
 }
