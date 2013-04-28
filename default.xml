@@ -4,10 +4,15 @@
         name="anongit"
         fetch="git://anongit.freedesktop.org/gstreamer/"
     />
+    <remote
+        name="github"
+        fetch="https://github.com/gipi/"
+    />
     <default
         revision="master"
         remote="anongit"
     />
+    <project path="build" name="gstreamer-repo" remote="github" revision="build"/>
     <project path="master/gstreamer" name="gstreamer"/>
     <project path="master/gst-plugins-base" name="gst-plugins-base"/>
     <project path="master/gst-plugins-good" name="gst-plugins-good"/>
