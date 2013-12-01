@@ -9,12 +9,12 @@
         fetch="https://github.com/gipi/"
     />
     <default
-        revision="1.0"
+        revision="1.2"
         remote="anongit"
     />
     <project path="build" name="gstreamer-repo" remote="github" revision="master"/>
-    <project path="1.0.6/gstreamer" name="gstreamer"/>
-    <project path="1.0.6/gst-plugins-base" name="gst-plugins-base"/>
-    <project path="1.0.6/gst-plugins-good" name="gst-plugins-good"/>
-    <project path="1.0.6/gst-plugins-bad" name="gst-plugins-bad"/>
+    <project path="1.2/gstreamer" name="gstreamer"/>
+    <project path="1.2/gst-plugins-base" name="gst-plugins-base"/>
+    <project path="1.2/gst-plugins-good" name="gst-plugins-good"/>
+    <project path="1.2/gst-plugins-bad" name="gst-plugins-bad"/>
 </manifest>

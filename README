@@ -2,12 +2,12 @@ This is a repository for a manifest useful to build from the latest
 source of gstreamer. Follow the steps outlined below
 
  $ mkdir gst && cd gst
- $ repo init -u https://github.com/gipi/gstreamer-repo -b 1.0
+ $ repo init -u https://github.com/gipi/gstreamer-repo -b 1.2
  $ repo sync
- $ vim 1.0/gstreamer/scripts/gst-uninstalled
+ $ vim 1.2/gstreamer/scripts/gst-uninstalled
  # change line HOME=
- $ ln -sf 1.0/gstreamer/scripts/gst-uninstalled gst-1.0
- $ ./gst-1.0
+ $ ln -sf 1.2/gstreamer/scripts/gst-uninstalled gst-1.2
+ $ ./gst-1.2
  $ source ../build/build-lib.sh
  $ build_all
 
